@@ -1,0 +1,189 @@
+@font-face {
+	font-family: Quicksand;
+	font-weight: 500;
+	src: url('../assets/fonts/quicksand/medium.ttf');
+}
+
+@font-face {
+	font-family: Quicksand;
+	font-weight: 700;
+	src: url('../assets/fonts/quicksand/bold.ttf');
+}
+
+@font-face {
+	font-family: Quicksand;
+	font-weight: 400;
+	src: url('../assets/fonts/quicksand/regular.ttf');
+}
+
+:root {
+	--very-light-pink: #C7C7C7;
+	--text-input-field: #F7F7F7; 
+	--hospital-green: #ACD9B2; 
+	--dark: #232830;
+	--white: #FFFFFF;
+	--black: #000000;
+	--sm: 14px;
+	--md: 16px; 
+	--lg: 18px; 
+}
+
+body { 
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+
+header {
+	display: none;
+	align-items: center;
+	height: 50px;
+	padding: 0px 40px 0px 40px;
+	box-shadow: 0px 1px 5px -3px rgba(0,0,0,0.20);
+}
+
+header .logo-container {
+	display: flex;
+	align-items: center;
+	width: 15%;
+}
+
+header nav {
+	width: 70%;
+}
+
+header nav ul {
+	list-style-type: none;
+	display: flex;
+}
+
+header nav ul .nav-item {
+	color: var(--very-light-pink);
+	font-size: var(--sm);
+	margin: 0px 10px 0px 10px;
+	padding: 2px 0px 2px 0px;
+}
+
+header nav ul .nav-item-active {
+	color: var(--hospital-green);
+	border: 1px solid var(--hospital-green);
+	border-radius: 4px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+header .logo-md {
+	width: 150px;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+main { 
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 300px;
+	justify-items: center;
+}
+
+
+.logo { 
+	width: 150px;
+	margin-bottom: 50px;
+	justify-self: center;
+}
+
+.email-container {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: var(--text-input-field);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.email-icon {
+	width: 80px;
+}
+
+.title {
+	font-size: var(--lg);
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+.subtitle {
+	margin: 0;
+	margin-bottom: 30px;
+	font-size: var(--md);
+	color: var(--very-light-pink);
+	font-weight: 500;
+	text-align: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: 700;
+	font-size: var(--sm);
+	margin-bottom: 4px;
+}
+
+input {
+	font-size: var(--md);
+	padding: 6px;
+	margin-bottom: 12px;
+	background-color: var(--text-input-field);
+	border: none;
+	border-radius: 8px;
+	height: 30px;
+}
+
+.primary-button {
+	width: 100%;
+	background-color: var(--hospital-green);
+	border-radius: 8px;
+	border: none;
+	padding: 16px;
+	font-weight: 700;
+	color: var(--white);
+	text-align: center;
+}
+
+.login-button {
+	margin-top: 20px;
+}
+
+footer {
+	margin-top: 10px;
+}
+
+.resend {
+	font-size: var(--sm);
+	color: var(--very-light-pink);
+}
+
+.resend a {
+	color: var(--hospital-green);
+	text-decoration: none;
+}
+
+@media (min-width: 640px) {
+	.logo { 
+		display: none;
+	}
+
+	header {
+		display: flex;
+	}
+}
